@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #f5f2f0;
+}
+
+.container-root {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  height: 600px;
+  width: 600px;
+}
+
+@import './spinner';
+
+@import './plane';
+@import './utils';
+@import './../../node_modules/materialize-css/dist/css/materialize.min.css';

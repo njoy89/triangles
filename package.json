@@ -1,0 +1,57 @@
+{
+  "name": "triangles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/main.js",
+  "scripts": {
+    "watch-client": "NODE_ENV=development node webpack/webpack-dev-server.js",
+    "dev-server": "NODE_ENV=development DEBUG=info,debug,error nodemon --watch server --watch config server/main.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.5",
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.0.1",
+    "babel-plugin-transform-runtime": "^6.6.0",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.7.2",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.0",
+    "react-hot-loader": "^1.3.0",
+    "resolve-url": "^0.2.1",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "config": "^1.19.0",
+    "d3": "^3.5.16",
+    "express": "^4.13.4",
+    "immutable": "^3.7.6",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.7.0",
+    "materialize-css": "^0.97.6",
+    "morgan": "^1.7.0",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-redux": "^4.1.2",
+    "react-router": "^2.0.0",
+    "redux": "^3.1.6",
+    "redux-actions": "^0.9.1",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/njoy89/triangles"
+  },
+  "author": "",
+  "license": "ISC"
+}

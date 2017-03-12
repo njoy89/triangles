@@ -1,0 +1,54 @@
+svg.plane {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+.plane {
+  &__axis {
+    &-text {
+      font-size: 10px;
+    }
+
+    line, path {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+  }
+
+  &__circle {
+    fill: #f9a825;
+    stroke: #f57f17;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s r, fill;
+
+    &:hover {
+      fill: #f57f17;
+    }
+  }
+
+  &__triangle {
+    cursor: pointer;
+
+    &-vertex {
+      fill: green;
+    }
+
+    &-interior {
+      stroke:#006600;
+      stroke-width: 2;
+      fill: #33cc33;
+      opacity: 0.6;
+    }
+  }
+
+  &__grid-horizontal-line,
+  &__grid-vertical-line {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke: #AAA;
+    stroke-width: 1px;
+  }
+}
